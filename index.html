@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drag & drop elements</title>
+    <!-- ============================== custom css file ============================== -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dragdrop-container">
+      <div class="dragdrop-elements-container">
+        <p>drag & drop elements</p>
+        <div class="dragdrop-elements">
+          <div class="whitebox">
+            <!-- ============================== draggable set to true so that we can drag that particular div without setting it or setting it to false we can't drag the particular div as it acts as by default ============================== -->
+            <div class="imagebox" draggable="true"></div>
+          </div>
+          <div class="whitebox"></div>
+          <div class="whitebox"></div>
+          <div class="whitebox"></div>
+        </div>
+      </div>
+      <div class="uploadimages-dragdrop-container">
+        <p>uploading images using drag & drop</p>
+        <div class="uploadimages-dragdrop">
+          <input type="file" accept="image/*" / id="inputimagefile" hidden>
+          <div id="imagepreview-box">
+            <p>click here or drag & drop images to upload</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== custom js file ============================== -->
+    <script src="main.js"></script>
+  </body>
+</html>
