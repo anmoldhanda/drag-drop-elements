@@ -61,10 +61,6 @@ imagepreview_box.addEventListener("dragover", (event) => {
 
 imagepreview_box.addEventListener("drop", (event) => {
   event.preventDefault();
-  const droppedfile = event.dataTransfer.files[0];
-  if (droppedfile) {
-    const droppedfileurl = URL.createObjectURL(droppedfile);
-    inputimagefile.files[0] = droppedfile;
-    uploadimagefunction();
-  }
+  inputimagefile.files = event.dataTransfer.files;
+  uploadimagefunction();
 });
